@@ -1,12 +1,7 @@
-Here’s the concise version of the `README.md` file with only the essential information and a **one-line explanation** for caching:
-
----
-
 # Deploy React to GitHub Pages
 
 This project demonstrates how to deploy a React application to GitHub Pages using GitHub Actions. The workflow includes testing, building, and deploying the application, along with a SonarCloud scan for code quality analysis.
 
----
 
 ## Workflow Overview
 
@@ -18,13 +13,11 @@ The workflow is defined in the GitHub Actions configuration file (`.github/workf
 
 Additionally, there is a separate workflow for SonarCloud code analysis that runs on every push or pull request to the `master` branch.
 
----
 
 ## Why Caching is Used
 
 Caching is used because each job runs in an **isolated environment**, so dependencies need to be reinstalled unless cached.
 
----
 
 ## Workflow Details
 
@@ -54,7 +47,6 @@ Caching is used because each job runs in an **isolated environment**, so depende
 - **Steps**:
   - **Deploy to GitHub Pages**: Uses `actions/deploy-pages@v4` to deploy the artifact to GitHub Pages.
 
----
 
 ## SonarCloud Integration
 
@@ -68,7 +60,3 @@ A separate workflow (`sonarcloud.yml`) is configured to run a SonarCloud scan on
   - **Environment Variables**:
     - `GITHUB_TOKEN`: Required to fetch pull request information.
     - `SONAR_TOKEN`: Required for authentication with SonarCloud.
-
----
-
-This version is concise and includes only the essential details. Let me know if you need further adjustments!
